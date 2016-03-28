@@ -4,7 +4,10 @@ file=${1%%.*}
 extension=${1#*.}
 #number=$(grep -o '[[:digit:]]' <<<$1)
 number=$(egrep -o [0-9]+ <<<$file)
-number=$((number - 426))
+
+number=$(awk -F'[^0-9]*' '{print $2}' <<< $1)
+
+number=$((number - 450))
 
 #number=${filename//[^0-9]/}
 
