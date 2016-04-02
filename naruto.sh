@@ -5,7 +5,7 @@ extension=${1#*.}
 #number=$(grep -o '[[:digit:]]' <<<$1)
 number=$(egrep -o [0-9]+ <<<$file)
 
-number=$(awk -F'[^0-9]*' '{print $2}' <<< $1)
+#number=$(awk -F'[^0-9]*' '{print $2}' <<< $1)
 
 number=$((number - 450))
 
