@@ -15,4 +15,4 @@ echo number trouvé $number
 echo file $file
 echo extension $extension
 
-mv "$file.$extension" "Naruto_Shippuuden.S20E$number.720p.HDTV.h264-FansubResistance.$extension"
+mv "$file.$extension" "Naruto_Shippuuden.S21E$number.720p.HDTV.h264-FansubResistance.$extension"
