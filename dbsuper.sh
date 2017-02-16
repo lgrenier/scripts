@@ -8,7 +8,7 @@ number=$(egrep -o [0-9]+ <<<$file)
 
 #number=${filename//[^0-9]/}
 
-number=$((number - 15))
+number=$((number - 14))
 
 echo number trouvé $number
 echo file $file
