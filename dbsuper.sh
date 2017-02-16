@@ -8,8 +8,10 @@ number=$(egrep -o [0-9]+ <<<$file)
 
 #number=${filename//[^0-9]/}
 
+number=$((number - 15))
+
 echo number trouvé $number
 echo file $file
 echo extension $extension
 
-mv "$file.$extension" "Dragon_Ball_Super.S01E$number.VOSTFR.720p.HDTV.h264-FansubResistance.$extension"
+mv "$file.$extension" "Dragon_Ball_Super.S02E$number.1080p.h264-FansubResistance.$extension"
